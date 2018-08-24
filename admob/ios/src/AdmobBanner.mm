@@ -68,9 +68,17 @@
     if(!isOnTop) {
         [bannerView setFrame:CGRectMake(0, height-bannerView.bounds.size.height, bannerView.bounds.size.width, bannerView.bounds.size.height)];
     }
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                          selector:@selector(keyboardWillShow:)
+                                          name:UIKeyboardWillShowNotification
+                                          object:nil];
 }
 
-
+- (void)keyboardWillShow:(NSNotification *)notification {
+	NSLog(@"Calling keyboardWillShow");
+	[rootController.view endEditing:YES];
+}
 
 - (void)showBanner {
     NSLog(@"Calling showBanner");
