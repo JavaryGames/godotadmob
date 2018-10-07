@@ -1,16 +1,18 @@
 AdMob
 =====
-This is the AdMob module for Godot Engine (https://github.com/okamstudio/godot)
+This is the light version of [the AdMob module](https://github.com/kloder-games/godot-admob) for [Godot Engine](https://github.com/okamstudio/godot)
 - Android & iOS
 - Banner
 - Interstitial
 - Rewarded Video
 
+For templates and examples, see [the full module](https://github.com/kloder-games/godot-admob).
+
 How to use
 ----------
 
 ### Android
-Drop the "admob" directory inside the "modules" directory on the Godot source.
+Clone into the "modules" directory on the Godot source.
 
 Recompile android export template (For documentation: http://docs.godotengine.org/en/latest/reference/compiling_for_android.html#compiling-export-templates).
 
@@ -24,7 +26,7 @@ In Example project goto Export > Target > Android:
 			- Access Network State
 			- Internet
 ### iOS
-- Drop the "admob" directory inside the "modules" directory on the Godot source;
+- Clone into the "modules" directory on the Godot source;
 - Download and extract the [Google Mobile Ads SDK](https://developers.google.com/admob/ios/download) inside the directory "admob/ios/lib";
 - Recompile the iOS export template (For documentation: http://docs.godotengine.org/en/stable/development/compiling/compiling_for_ios.html).
 
