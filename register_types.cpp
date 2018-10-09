@@ -11,7 +11,7 @@
 #include "register_types.h"
 #include "ios/src/godotAdmob.h"
 
-void register_admob_types() {
+void register_godotadmob_types() {
 #if VERSION_MAJOR == 3
     Engine::get_singleton()->add_singleton(Engine::Singleton("AdMob", memnew(GodotAdmob)));
 #else
@@ -19,5 +19,5 @@ void register_admob_types() {
 #endif
 }
 
-void unregister_admob_types() {
+void unregister_godotadmob_types() {
 }
